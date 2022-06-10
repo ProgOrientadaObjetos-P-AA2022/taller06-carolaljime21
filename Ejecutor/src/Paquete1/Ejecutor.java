@@ -13,10 +13,6 @@ public class Ejecutor {
         System.out.println("Nombre del Hospital");
         String nomHosp = entrada.nextLine();
 
-        System.out.println("Ingrese el nombre de la ciudad");
-        String nomCiudad = entrada.nextLine();
-        
-
         Medico[] medicos;
         Enfermero[] enfermeros;
         
@@ -28,7 +24,7 @@ public class Ejecutor {
         System.out.println("Ingrese la provincia");
         String nombreProv = entrada.nextLine();
         
-        Ciudad ciudad = new Ciudad(nomCiudad, nombreProv);
+        Ciudad ciudad = new Ciudad(nombreCiu, nombreProv);
         
         System.out.println("Numero de médicos: ");
         int nMedicos = entrada.nextInt();

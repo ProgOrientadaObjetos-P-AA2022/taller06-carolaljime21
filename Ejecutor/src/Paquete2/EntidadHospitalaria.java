@@ -41,14 +41,16 @@ public class EntidadHospitalaria {
     }
 
     public void establecerSueldo() {
-        double sum = 0;
+        double sumM = 0, sumE = 0;
         for (int i = 0; i < obtenerMedicos().length; i++) {
-            sum = sum + obtenerMedicos()[i].obtenerSueldo();
+            sumM = sumM + obtenerMedicos()[i].obtenerSueldo();
         }
         
         for (int i = 0; i < obtenerEnfermeros().length; i++) {
-            sum = sum + obtenerEnfermeros()[i].obtenerSueldo();
+            sumE = sumE + obtenerEnfermeros()[i].obtenerSueldo();
         }
+        
+        sueldo = sumE + sumM;
     }
 
     public void establecerDireccion(String c) {
